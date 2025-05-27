@@ -1,0 +1,124 @@
+---
+sidebar_position: 1
+---
+
+# 使い方
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
+export const VersionInfo = () => {
+  const {siteConfig} = useDocusaurusContext();
+  return <span>{siteConfig.customFields.version}</span>;
+};
+
+VCCを使用してアバター用のUnityプロジェクトの作成まで完了している想定です。
+
+## 動画チュートリアル
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/d0EHjJmXfDI" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+></iframe>
+
+## lilToonシェーダーのインポート
+
+<span className="large-text">[lilToon](https://lilxyzw.github.io/lilToon/)</span>
+
+上記のサイトを参考にlilToonをプロジェクトにインポートします。
+
+## Modular Avatarの導入
+
+<span className="large-text">[Modular Avatar](https://modular-avatar.nadena.dev/)</span>
+
+上記のサイトを参考にModularAvatarをインポートします。
+
+## 本パッケージのインポート
+
+Lugharian_v<VersionInfo />.unitypackageをUnityにドラッグアンドドロップでインポートします。
+
+## アバタークリエイト機能を起動する
+
+Lugharianフォルダ以下のAvatarシーンを開きます。
+
+![シーンを開く画面](img/image5.png)
+
+シーンが開いたらPlayボタンを押します。
+
+![Playボタン](img/image6.png)
+
+シーンが実行されるとゲームビューが切り替わり、アバタークリエイトシステムが起動します。
+
+## キャラクターをカスタマイズする
+
+起動すると以下のような画面になります。ゲームビュー内の`Select Creator`ボタンを押すと、キャラクターのパラメーターが表示されます。
+
+![Select Creatorボタン](img/image1.png)
+
+:::info
+
+`Select Creator`が表示されない場合
+GameViewのこのスライダーを1倍にしてください。
+
+![スケールスライダー](img/image9.png)
+
+:::
+
+## 項目の説明
+
+![設定項目](img/image2.png)
+
+|項目名|説明|
+|---|---|
+|Save Folder|カスタムしたアバターの保存先フォルダ。「Assets」から始まるパスで指定してください。存在しないフォルダーは自動で作成されます。|
+|Load SaveData|アバターの編集情報をファイルからロードします。|
+|Export SaveData|アバターの編集情報をファイルにエクスポートします。|
+|Export Avatar|現在の設定でアバターをエクスポートします。|
+
+### それ以下の項目
+
+以下の項目はアバターのカスタマイズパラメータです。スライダーやカラーを選択して自分好みにカスタマイズしましょう。
+
+## 出力されたアバターをアップロードする
+`Export Avatar`ボタンを押すと、指定されたフォルダに`ExportAvatar`というプレハブが生成されます。
+
+![プレハブの表示](img/image3.png)
+
+**新しいシーン**を作成し、`ExportAvatar`をシーンに配置します。
+
+:::info
+
+Avatarシーンで操作すると不具合が発生することがあるため別のシーンでアップロードがおすすめです。
+
+:::
+
+新しいシーンは、`File`>`New Scene`で作成できます。
+
+![新しいシーン](img/image4.png)
+
+テンプレートは`Basic(Built-in)`を選択し`Create`を押します。
+
+![シーンのテンプレート](img/image7.png)
+
+シーンにアバターを配置して、いつもの手順でアップロードできます。
+
+:::tip
+
+アバターをエクスポートするとエクスポートした先のフォルダに`save.json`が作られ、次にクリエイト機能を実行したときに`Load SaveData`で前回の編集内容を復元できます。
+
+:::
+
+## アバターをPublic化したいときは？
+
+本アバターは以下の条件でVRChatにアップロードしたアバターをPublic化できます。
+
+- 同梱されているショップ情報ギミックを追加する
+- Public化するアバターのBlueprintIDを作者（@kurotori4423）に連絡する。
+
+ショップ情報ギミックは`Lugharian`フォルダ以下の`OpenShopInfo`というプレハブがあるのでこちらをアップロードするアバターに追加します。
+
+![OpenShopInfoの導入](img/image10.png)

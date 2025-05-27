@@ -23,6 +23,10 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  customFields: {
+    version: '1.4',
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -68,9 +72,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Lugharian Avatar Manual',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Lugharian Avatar Manual Logo',
         src: 'img/logo.svg',
       },
       items: [
