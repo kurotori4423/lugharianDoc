@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklugharian_doc=self.webpackChunklugharian_doc||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/lugharianDoc/blog","blogTitle":"Blog","authorsListPath":"/lugharianDoc/blog/authors"}')}}]);
