@@ -1,0 +1,90 @@
+# プリセットアドオンを作成する
+
+## 概要
+
+プリセットアドオンは、`Avatar Creator Setting`や、`Avatar Creator Parts Setting`で設定されたプリセットに対して項目を追加できるアドオンを作ることができる機能です。
+
+カラー変更に対応したリテクスチャを作成したいときなどに使えます。
+
+## 使い方
+
+ルーガン族に新たなBodyTypeを後から追加する例で説明します。
+
+まず、新しいゲームオブジェクトを作成します。
+
+次にそのゲームオブジェクトに`Avatar Creator Preset Addon`を追加します。
+
+![](presetAddon_2025-06-02-17-01-57.png)
+
+`Target Parts Name`には結合したいプリセットパラメーターがあるパーツの名前を設定します。ベースの場合は空欄でもOKです。
+
+今回はベースの`BodyType`に新たなプリセットを追加したいのでそのままにします。
+
+`Preset Name`は追加対象のプリセット名です。`BodyType`と入力します。
+
+次に、プリセットで変更する共有パラメーターを追加します。
+`Shared Parameters`でプラスボタンを押して、`LugharianCreation`で設定されているプリセットと同じように`BodyBase_MaskTex`パラメーターを追加し、`Type`を`Texture`にします。
+
+`LugharianCreation`に設定されている`BodyType`プリセットの項目
+![参考項目](presetAddon_2025-06-02-17-07-09.png)
+
+`Shared Parameters`に`BodyBase_MaskTex`を追加して`Type`を`Texture`にする
+
+![Shared Parameterの作成](presetAddon_2025-06-02-17-11-13.png)
+
+そうしたら、`Preset`の項目からプラスボタンを押して新しいプリセットを作成し、`Preset Name`を`BodyType_new`等にします。
+
+:::info
+
+この時プリセット名はユニークになるように気を付けてください。同じ名前のプリセットの場合は反映されません。
+
+:::
+
+![Presetの作成](presetAddon_2025-06-02-17-17-27.png)
+
+`Parameters`のリストでプラスボタンを押して、`Shared Parameter ID`を先ほど設定した`BodyBase_MaskTex`に変更し、`Texture`に新たなマスクを設定します。
+
+![パラメーターの設定](presetAddon_2025-06-02-17-19-28.png)
+
+このゲームオブジェクトを一度`LugharianCreation`(`AvatarCreatorSetting`がアタッチされたオブジェクト)のヒエラルキー以下に配置します。
+
+![ベース以下にオブジェクトを配置する](presetAddon_2025-06-02-17-21-48.png)
+
+この状態でいったん再生してみましょう。
+
+`BodyType`に`BodyType_new`が追加され、選択すると変更されます。
+
+![](presetAddon_2025-06-02-17-23-22.png)
+
+`BodyType`は他のパーツオブジェクトでも使っているのでそちらも設定します。
+
+該当するのは`HeadParts`、`BodyFur`、`FaceExtraFur`です。
+
+新たにゲームオブジェクトを作成し、先ほどのアドオンオブジェクト以下に配置しましょう。場所はどこでもいいですが、同じプリセットパラメーターの物なら親子関係にすると後々プレハブ化するときに便利です。名前も適切なものを付けると良いでしょう。
+
+![配置するヒエラルキー](presetAddon_2025-06-02-17-30-05.png)
+
+新たに追加した`HeadParts_BodyType_Addon`に以下の設定をします。`Target Parts Name`が変わり、変更対象の`Shared Parameters`も変わります。
+
+![HeadParts_BodyType_Addonの設定](presetAddon_2025-06-02-17-32-28.png)
+
+同様に`BodyFur`と`FaceExtraFur`も変更します。
+
+`BodyFur`の設定
+
+![BodyFurの設定](presetAddon_2025-06-02-17-41-39.png)
+
+`FaceExtraFur`の設定
+
+![FaceExtraFurの設定](presetAddon_2025-06-02-17-42-19.png)
+
+最終的にこのような形になっていればOKです。
+
+![最終的なアドオンのヒエラルキー構造](presetAddon_2025-06-02-17-42-44.png)
+
+再度実行してみるとこのようになります。
+
+![再実行結果](presetAddon_2025-06-02-17-43-21.png)
+
+`BodyType`を後から追加することができました。
+
