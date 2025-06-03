@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Lugharian Avatar Manual",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Lugharian Avatar Manual Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  }
+}

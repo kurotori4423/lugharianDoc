@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.カスタマイズ": {
+    "message": "カスタマイズ",
+    "description": "The label for category カスタマイズ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.カスタマイズ.link.generated-index.description": {
+    "message": "ルーガン族のカスタマイズ方法を学ぶ",
+    "description": "The generated-index page description for category カスタマイズ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.クリエイター向け情報": {
+    "message": "クリエイター向け情報",
+    "description": "The label for category クリエイター向け情報 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.クリエイター向け情報.link.generated-index.description": {
+    "message": "ルーガン族対応衣装や、プリセットアドオンの作り方",
+    "description": "The generated-index page description for category クリエイター向け情報 in sidebar tutorialSidebar"
+  }
+}

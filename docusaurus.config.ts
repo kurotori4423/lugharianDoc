@@ -88,16 +88,16 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -115,30 +115,34 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/w97zCq9uBy',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/kurotori4423',
+            },
+            {
+              label: 'BlueSky',
+              href: 'https://bsky.app/profile/kurotori.bsky.social',
             },
           ],
         },
         {
           title: 'More',
           items: [
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'BOOTH',
+              href: 'https://kurotori.booth.pm/',
             },
           ],
         },

@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.カスタマイズ": {
+    "message": "Customization",
+    "description": "The label for category カスタマイズ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.カスタマイズ.link.generated-index.description": {
+    "message": "Learn how to customize Lugharian avatars",
+    "description": "The generated-index page description for category カスタマイズ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.クリエイター向け情報": {
+    "message": "For Creators",
+    "description": "The label for category クリエイター向け情報 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.クリエイター向け情報.link.generated-index.description": {
+    "message": "How to create Lugharian-compatible outfits and preset addons",
+    "description": "The generated-index page description for category クリエイター向け情報 in sidebar tutorialSidebar"
+  }
+}

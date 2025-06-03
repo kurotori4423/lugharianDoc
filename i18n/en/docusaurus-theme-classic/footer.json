@@ -1,0 +1,38 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/w97zCq9uBy"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "The label of footer link with label=X linking to https://x.com/kurotori4423"
+  },
+  "link.item.label.BlueSky": {
+    "message": "BlueSky",
+    "description": "The label of footer link with label=BlueSky linking to https://bsky.app/profile/kurotori.bsky.social"
+  },
+  "link.item.label.BOOTH": {
+    "message": "BOOTH",
+    "description": "The label of footer link with label=BOOTH linking to https://kurotori.booth.pm/"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 My Project, Inc. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
