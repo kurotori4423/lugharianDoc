@@ -31,3 +31,53 @@ For example, `Apron`, `Vest_ArmBand`, and `Chaps` have `Group Tag` set to `Wears
 ![|400](faq_2025-06-02-11-52-37.png)
 
 By giving each `Group Tag` a different name, they will no longer be merged.
+
+## I want to match body shape when modifying clothing etc. in Blender files
+
+When adding clothing etc. with the included Blender files, if you want to match the changed body shape, you can change the body shape by modifying the shape keys (`defShape.Belly` etc.) of the `BodyBase` object.
+
+![](faq_2025-06-09-16-01-28.png)
+
+:::info
+
+In Lugharian, only the body shape change shape keys of BodyBase can be operated, and other shape keys with the same name are set to be the same as BodyBase's shape keys using Blender's driver function.
+
+:::
+
+## Export the exported avatar as a model file (GLB).
+
+To export the exported avatar so it can be imported into other software like Resonite or Blender, you can export it in glTF file format (.glb).
+
+First, add a package to export GLTF from Unity to your project.
+
+Open `Window` > `Package Manager` from the toolbar.
+
+![](faq_2025-06-09-16-14-11.png)
+
+Press the `+` button and select `Add package from git URL`.
+
+![](faq_2025-06-09-16-15-25.png)
+
+Enter the following URL and add it:
+
+```
+https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF
+```
+
+If a `UniGLTF` item is added to the toolbar, the installation was successful.
+
+To use it, select `Export glTF...` from `UniGLTF`.
+
+![](faq_2025-06-09-16-20-09.png)
+
+Set the avatar you want to export to `Export Root`.
+
+![](faq_2025-06-09-16-21-21.png)
+
+You can save it as a file by pressing `Export` without changing any settings.
+
+To import into Blender, select `File` > `Import` > `glTF 2.0 (.glb/gltf)`.
+
+Import with the following settings:
+
+![](faq_2025-06-09-16-31-54.png)
