@@ -40,6 +40,8 @@ From the toolbar, select `Tools` > `Mochifitter` to open the `MochiFitter` windo
 
 **On the first run, you will be prompted to install Blender and the add-on. Please install them.**
 
+![](mochifitter_2026-02-01-16-42-09.png)
+
 After installation is complete, set the outfit you want to convert in `Outfit to Convert`. In this example, we set:
 
 `Assets/TinmeshiTei/Cloths/Coverall2/Prefab/Coverall2_ClothOffGimmic.prefab`

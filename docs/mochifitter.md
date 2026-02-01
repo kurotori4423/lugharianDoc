@@ -42,6 +42,8 @@
 
 **初回は、Blenderとアドオンのインストールが促されます。インストールを行ってください。**
 
+![](mochifitter_2026-02-01-16-42-09.png)
+
 インストールが完了したら、`Outfit to Convert`に変換したい衣装を設定します。今回は`Assets/TinmeshiTei/Cloths/Coverall2/Prefab/Coverall2_ClothOffGimmic.prefab`を設定しました。
 
 - `変換先アバター / Target Avatar` に `Lugharian`
