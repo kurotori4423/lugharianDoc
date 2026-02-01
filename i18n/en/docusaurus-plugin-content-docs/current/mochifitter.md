@@ -4,7 +4,9 @@ By using the Lugharian Mochifitter profile, you can use [Mochifitter](https://ya
 
 ## Notes
 
-The current profile (v0.1) has the following known issues:
+The following issues have been largely resolved in v0.2.
+
+The current (v0.1) profile has the following known issues:
 
 - The mesh around the shoulders and chest is prone to clipping/intersection.
 - Gloves and similar items may not convert correctly.
@@ -62,6 +64,24 @@ After a short while, the outfit conversion will complete.
 ### 3. Put the outfit on
 
 First, place the Lugharian `ExportAvatar` prefab you want to dress into the scene. It is helpful to prepare a Lugharian avatar that has no clothes equipped.
+
+### Additional settings in v0.2
+
+The generation behavior changed in v0.2. Outfits converted in v0.2 are **generated with a different initial pose**.
+
+![](mochifitter_2026-02-02-01-39-27.png)
+
+Go to the `Armature` of the outfit, expand `Reset positions to base avatar` in `MA Merge Armature`, check all items and press `Do it!`.
+If `MA Merge Armature` is missing, add it via `Add Component`.
+
+![](mochifitter_2026-02-02-01-42-22.png)
+
+
+![](mochifitter_2026-02-02-01-42-50.png)
+
+This aligns the pose.
+
+--- Below is common to v0.1
 
 ![](mochifitter_2026-02-01-15-11-10.png)
 
