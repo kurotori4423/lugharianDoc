@@ -18,5 +18,13 @@
   "sidebar.tutorialSidebar.category.クリエイター向け情報.link.generated-index.description": {
     "message": "How to create Lugharian-compatible outfits and preset addons",
     "description": "The generated-index page description for category クリエイター向け情報 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.対応パーツごとの説明": {
+    "message": "Compatible Parts Guides",
+    "description": "The label for category 対応パーツごとの説明 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.対応パーツごとの説明.link.generated-index.description": {
+    "message": "Guides for Lugharian-compatible outfits, parts, and preset add-ons",
+    "description": "The generated-index page description for category 対応パーツごとの説明 in sidebar tutorialSidebar"
   }
 }
